@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>signup page</title>
+<style>
+.top{
+
+	margin-top: 100px;
+}
+.col
+{
+
+ background-image: url("{% static 'images/truck.jpg' %}");
+  background-repeat: no-repeat;
+}
+</style>
+</head>
+
+
+<body class="col">
+	{% block content %}
+<div>
+<h1>Reference page</h1>
+
+	
+
+	<a href="/signup"><button type="button" name="" >signup</button></a>
+
+	<a href="/login"><button type="button" name="" >login</button></a>
+
+
+
+</div>
+{% endblock %}
+</body>
+</html>
