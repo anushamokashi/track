@@ -1,18 +1,34 @@
-{% extends "firstpage.html" %}
+{% load static %}
+
+<style>
+.columns
+{
+	background-image: url("/static/images/truck.jpg");
+	 height: 100%; 
+	 width: 100%;
+}
+</style>
+<body class="columns">
 
 {% block content %}
 
 	<center>
 				<h1>Login Page </h1>
 		<div>
-				username:<input type="text" name="username"><br/><br/>
-				password:<input type="password" name="password"><br/><br/>
 
+
+			<div style="color: white;">
+				username:<input type="text" name="username"><br/><br/>
+			</div>
+			<div style="color: white;">
+				password:<input type="password" name="password"><br/><br/>
+			</div>
 				<input type="submit" value="login" name="">
 
-
+				<a href="/"><input type="submit" value="back" name=""></a>
 		</div>
 </center>
 
 {% endblock  %}
+</body>
 </html>

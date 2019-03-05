@@ -15,7 +15,7 @@
 .col
 {
 
- background-image: url("{% static 'images/truck.jpg' %}");
+ background-image: url("{% static 'images/pyt.jpg' %}");
   background-repeat: no-repeat;
 }
 </style>
@@ -23,17 +23,20 @@
 
 
 <body class="col">
-	{% block content %}
+{% block content %}
 <div>
-<h1>Reference page</h1>
+<center>
 
+	<h1 style="color:white;">Reference page</h1><br>
+	<h2 style="color:white;">please signup here...once u signup ..u can login</h2><br/>
 	
 
-	<a href="/signup"><button type="button" name="" >signup</button></a>
+	<a href="/signup"><button type="button" name="">signup</button></a>
 
-	<a href="/login"><button type="button" name="" >login</button></a>
+	<a href="/login"><button type="button" name="">login</button></a>
 
 
+</center>
 
 </div>
 {% endblock %}
