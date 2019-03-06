@@ -1,33 +1,37 @@
 
-{% extends "firstpage.html" %}
 {% load static %}
 {% block content %}
 <div class="top">
 
 <center>
 	<div>
-			<div style="color: white;">
+			<div style="color: black;">
 				firstname:<input type="text" name="firstname"><br/><br/>
 			</div>
 
-			<div style="color: white;">
+			<div style="color: black;">
 			lastname:<input type="text" name="lastname"><br/><br/>
 			</div>
 
-			<div style="color: white;">
-				email:<input type="text" name="firstname"><br/><br/>
+			<div style="color: black;">
+				email:<input type="text" name="email"><br/><br/>
 			</div>
 
-			<div style="color: white;">
+			<div style="color: black;">
 			password: <input type="password" name="password"><br/><br/>
 			</div>
 
-			<div  style="color: white;">
-			confirm password:<input type="password" name="confirmpassword"><br/><br/>
+			<div  style="color: black;">
+				confirm password:<input type="password" name="confirmpassword"><br/><br/>
+
+		    </div>
+
+			<div style="color: black;">
 					phn no: <input type="number" name="phnno"><br/><br/>
 			</div>
+		
 
-				<input type="button" name="register" value="Register">
+				<button type="submit" class="btn btn-primary" >Register</button>
 
 				<a href="/"><input type="button" name="register" value="Back"></a>
 
