@@ -11,7 +11,8 @@
 <body class="columns">
 
 {% block content %}
-
+<div>
+<form method="POST" action="{% url 'login' %}">{% csrf_token %}
 	<center>
 				<h1>Login Page </h1>
 		<div>
@@ -27,8 +28,9 @@
 
 				<a href="/"><input type="submit" value="back" name=""></a>
 		</div>
-</center>
-
+    </center>
+</form>
+</div>
 {% endblock  %}
 </body>
 </html>

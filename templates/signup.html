@@ -1,8 +1,10 @@
 
 {% load static %}
 {% block content %}
-<div class="top">
-
+<body style="background-color: cyan;">
+<div class="top" >
+ <form method="POST"  action="{% url 'signup' %}">
+      {% csrf_token %}
 <center>
 	<div>
 			<div style="color: black;">
@@ -39,6 +41,7 @@
 	</div>
 </center>
 </div>
+</body>
 {% endblock %}
 
 
